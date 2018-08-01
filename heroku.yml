@@ -4,6 +4,8 @@ setup:
 build:
   languages:
     - ruby
+  packages:
+    - gcc
 run:
   rake: bundle exec rake
   console: bundle exec irb
