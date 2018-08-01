@@ -1,7 +1,10 @@
+setup:
+  config:
+    LANG: en_US.UTF-8
 build:
   languages:
     - ruby
-  packages:
-    - gcc
 run:
+  rake: bundle exec rake
+  console: bundle exec irb
   web: ruby app.rb
