@@ -1,0 +1,7 @@
+build:
+  languages:
+    - ruby
+  packages:
+    - gcc
+run:
+  web: ruby app.rb
