@@ -1,0 +1,23 @@
+{
+  "name": "sinatra-heroku-yml",
+  "scripts": {
+  },
+  "env": {
+    "CONFIG_DURING_BUILD": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
