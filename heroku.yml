@@ -8,4 +8,4 @@ build:
 run:
   rake: bundle exec rake
   console: bundle exec irb
-  web: ruby app.rb
+  web: ruby "${CONFIG_DURING_BUILD}"
